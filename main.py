@@ -47,6 +47,12 @@ def my_floor(x: float) -> int:
 def my_ceil(x: float) -> int:
     """Return ceil(x) without using math.ceil."""
     # === TODO ===
-    # Your code here
-    pass
+    
+    result = int(x)
+    
+    if x > result:
+        return result + 1
+    
+    return result
+    
     # === END TODO ===
