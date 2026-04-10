@@ -33,8 +33,14 @@ def find_non_surjective_element(mapping: dict, target: set):
 def my_floor(x: float) -> int:
     """Return floor(x) without using math.floor."""
     # === TODO ===
-    # Your code here
-    pass
+    
+    result = int(x)
+    
+    if x < result:
+        return result - 1
+    
+    return result
+
     # === END TODO ===
 
 
