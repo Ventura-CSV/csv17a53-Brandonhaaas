@@ -4,8 +4,14 @@ from __future__ import annotations
 def find_non_injective_pair(mapping: dict) -> tuple | None:
     """Return (x1, x2) where f(x1)==f(x2) and x1!=x2, or None if injective."""
     # === TODO ===
-    # Your code here
-    pass
+    
+    hashmap = dict()
+    for x, y in mapping.items():
+        if y in hashmap:
+            return (hashmap[y], x)
+        hashmap[y] = x
+    return None
+    
     # === END TODO ===
 
 
