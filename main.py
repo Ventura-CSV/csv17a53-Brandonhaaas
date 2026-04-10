@@ -18,8 +18,15 @@ def find_non_injective_pair(mapping: dict) -> tuple | None:
 def find_non_surjective_element(mapping: dict, target: set):
     """Return one target element with no input mapping to it, or None if surjective."""
     # === TODO ===
-    # Your code here
-    pass
+    
+    output_values = set(mapping.values())
+
+    for element in target:
+        if element not in output_values:
+            return element
+    
+    return None
+
     # === END TODO ===
 
 
